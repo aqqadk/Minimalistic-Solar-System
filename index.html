@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>| Minimalistic Solar System</title>
+		<meta name=viewport content="width=device-width, initial-scale=1">
+        <link rel='stylesheet' type='text/css' href='style.css'/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="info_boxes.js"></script>
+		<link rel="icon" type="image/png" href="imgs/earth.ico">
+	</head>
+	<body>
+	
+		<div class="onoffswitch">
+			<span class='on'>On</span> ||
+			<span class='off'>Off</span>
+		</div>
+		
+		<div class="playstopswitch">
+			<span class='play'><img src='imgs/play.png' width='10px' height='10px'> ||</span>
+			<span class='stop'><img src='imgs/stop.png' width='10px' height='10px'></span>
+		</div>
+			
+		<div id='planets'>
+			<!--Neptune-->
+			<div class='neptune-orbit'>
+				<a id='neptune_link'>
+					<img class='neptune' src='imgs/neptune.png'>
+				</a>
+			</div>			
+			
+			<!--Uranus-->
+			<div class='uranus-orbit'>
+				<a id='uranus_link'>
+					<img class='uranus' src='imgs/uranus.png'>
+				</a>
+			</div>
+			
+			<!--Saturn-->
+			<div class='saturn-orbit'>
+				<a id='saturn_link'>
+					<img class='saturn' src='imgs/saturn.png'>
+				</a>
+			</div>
+					
+					
+			<!--Jupiter-->
+			<div class='jupiter-orbit'>
+				<a id='jupiter_link'>
+					<img class='jupiter' src='imgs/jupiter.png'>
+				</a>
+			</div>
+			
+			<!--Dwarf Planet-->
+			<div class='ceres-orbit'>
+				<a id='ceres_link'>
+					<img class='ceres' src='imgs/ceres.png'>
+				</a>
+			</div>		
+			
+			<!--Mars-->
+			<div class='mars-orbit'>
+				<a id='mars_link'>
+					<img class='mars' src='imgs/mars.png'>
+				</a>
+			</div>		
+			
+			<!--Earth-->
+			<div class='earth-orbit'>
+			<a id='earth_link'>
+					<img class='earth' src='imgs/earth.png' />
+				</a>
+			</div>		
+			
+			<!--Venus-->
+			<div class='venus-orbit'>
+				<a id='venus_link'>
+					<img class='venus' src='imgs/venus.png'>
+				</a>
+			</div>		
+			
+			<!--Mercury-->
+			<div class='mercury-orbit'>
+				<a id='mercury_link'>
+					<img class='mercury' src='imgs/mercury.png'>
+				</a>
+			</div>		
+			
+			<img class='sun' src='imgs/sun.png'>
+		</div>
+
+		<!--Links   <a class='close' style='font:18px AB;color:white;'>Close</a>-->
+		
+
+		<!--neptune link-->
+		<div id='neptune_info'>
+			<div id='info_box' style='background-color:royalblue;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/5xrKJRrEmIl' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--uranus link-->
+		<div id='uranus_info'>
+			<div id='info_box' style='background-color:powderblue;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/gwMTwRZJvut' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--saturn link-->
+		<div id='saturn_info'>
+			<div id='info_box' style='background-color:darkkhaki;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/2MblmaBNkh' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--jupiter link-->
+		<div id='jupiter_info'>
+			<div id='info_box' style='background-color:tan;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/a0f1S96CzY1' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--dwarf link-->
+		<div id='ceres_info'>
+			<div id='info_box' style='background-color:gray;width:300px;margin:0 auto;'><iframe src='http://comets-asteroids.findthedata.org/w/2N6Y2BO851j' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a>
+			<ul>
+				<li><span id='emphasize'>Origin:</span> Named after goddess Ceres.</li>
+				<li><span id='emphasize'>Discovered By:</span> Piazzi discovered Ceres on 1st January 1801.</li>
+				<li><span id='emphasize'>Looks:</span> Similar to the moon.</li>
+				<li><span id='emphasize'>Atmosphere:</span> May have a weak atmosphere.</li>
+				<li><span id='emphasize'>Moons:</span> Nope.</li>
+				<li><span id='emphasize'>Rings:</span> No rings.</li>
+				<li><span id='emphasize'>Features:</span> Water in the interior.</li>
+				<li><span id='emphasize'>Geography:</span> Frozen surface, ice interior.</li>
+				<li><span id='emphasize'>Rotation/Revolution:</span> Days are short (Rotation). Years are long (Revolution).</li>
+				<li><span id='emphasize'>Updates:</span> No one cares about this place.</li>
+				<li><span id='emphasize'>Interesting:</span> It's like a giant snowball.</li>
+			</ul>
+			</div></div>
+		</div>	
+		<!--mars link-->
+		<div id='mars_info'>
+			<div id='info_box' style='background-color:peru;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/cKzOzoK8RF3' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--earth link-->
+		<div id='earth_info'>
+			<div id='info_box' style='background-color:springgreen;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/1LeFMoc3ISV' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--venus link-->
+		<div id='venus_info'>
+			<div id='info_box' style='background-color:orange;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/iffnXU1br37' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		<!--mercury link-->
+		<div id='mercury_info'>
+			<div id='info_box' style='background-color:gray;width:300px;margin:0 auto;'><iframe src='http://planets.findthedata.org/w/7fUfaTt6igZ' width=300 height=300 frameborder=0 scrolling='no' style='vertical-align:top;' ></iframe><div style='text-align:center;'><a class='close' style='font:18px AB;color:white;'>Close</a></div></div>
+		</div>
+		
+	</body>
+</html>
