@@ -1,6 +1,6 @@
-Minimalistic-Solar-System
+Minimalistic Solar System
 =========================
 
-Small two day science project.
-Poorly Optimized.
+A small two day science project. Please disregard the poor, redundent code. My first web project.
 Check out the project: http://aqqadk.github.io/Minimalistic-Solar-System/
+
